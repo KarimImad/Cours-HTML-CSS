@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>MMA</title>
+</head>
+<body> 
+    <header> 
+        <div class="displayHeader">
+            <div> 
+            <img class= "logoHeader"src="Image/Islam-Makhachev.webp" alt="Logo">
+            </div>
+            <div>
+                <nav>
+                    <ul class="ulHeader">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">MMA</a></li>
+                        <li><a href="#">Billeterie</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div> 
+            
+
+    </header>
+    <main> 
+        <section> 
+            <div class="KhabibetKhamzat"> 
+                <div> 
+                    <img class="img2" src="Image/khamzat-chimaev.jpg" alt="Khamzat Chimaev">
+                    <p> Khamzat Chimaev</p>
+                </div>
+                <div>
+                    <img class="khabib" src="Image/Khabib.jpg" alt="Khabib Nurmagomedov">
+                    <p> Khabib Nurmagomedov</p>
+                </div>
+                
+            </div>
+        </section>
+
+    <section> 
+        <table>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Pays</th>
+                <th>Poids</th>
+            </tr>
+            <tr>
+                <td>Chimaev</td>
+                <td>Khamzat</td>
+                <td>Suède</td>
+                <td>77kg</td>
+            </tr>
+            <tr>
+                <td>Nurmagomedov</td>
+                <td>Khabib</td>
+                <td>Russie</td>
+                <td>70kg</td>
+            </tr>
+        </table>
+    </section>
+    <section> 
+        <form method="get" action="">
+            <p>
+                <label for="prenom"> Votre prenom:</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Votre prenom" size="30" maxlength="20">
+            </p>
+            <p>
+                 Cochez les aliments que vous préféré :<br>
+                        <input type="checkbox" name="frites" id="frites"> 
+                        <label for="frites">Frites</label><br>
+                        <input type="checkbox" name="steak" id="steak"> 
+                        <label for="steak">Steak</label><br>
+                        <input type="checkbox" name="panini" id="panini"> 
+                        <label for="panini">Panini</label><br>
+                        <input type="checkbox" name="salade" id="salade"> 
+                        <label for="salade">Salade</label>
+
+            </p>
+            
+            <p> 
+               Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br>
+                    <input type="radio" name="age" value="moins15" id="moins15">
+                    <label for="moins15">Moins de 15 ans</label><br>
+                    <input type="radio" name="age" value="medium15-25" id="medium15-25">
+                    <label for="medium15-25">15-25 ans</label><br>
+                    <input type="radio" name="age" value="medium25-40" id="medium25-40">
+                    <label for="medium25-40">25-40 ans</label><br>
+                    <input type="radio" name="age" value="plus40" id="plus40">
+                    <label for="plus40">Plus de 40 ans</label> 
+            </p>
+        </form>
+
+        <form method="get" action="">
+            <p>
+                <label for="pays">De quel pays venez-vous ?</label><br>
+                    <select name="pays" id="pays">
+                        <option value="sénégal">Sénégal</option>
+                        <option value="royaume-uni">Royaume-Uni</option>
+                        <option value="france" selected>France</option>
+                        <option value="maroc">Maroc</option>
+                        <option value="djibouti">Djibouti</option>
+                    </select>
+
+                </p>
+
+            <fieldset class="fieldset"> 
+                 <legend> Vos coordonnées</legend>
+                    <label for="nom">Quel est votre nom ?</label>
+                    <input type="text" name="nom" id="nom"> <br>
+                    <label for="prenom">Quel est votre prénom ?</label>
+                    <input type="text" name="prenom" id="prenom" required> <br>
+                    <label for="email">Quel est votre e-mail ?</label>
+                    <input type="email" name="email" id="email">
+            </fieldset>
+        
+            <p> Quel beau formulaire</p>
+            <input type="submit" value="Envoyer">
+        </form>
+
+      
+    </section>
+    </main>
+</body>
+</html>

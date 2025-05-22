@@ -1,0 +1,51 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing:border-box;                                                                                                           
+}
+
+a{
+    text-decoration:none;
+}
+.logoHeader{
+    width: 350px;
+
+} 
+ul li{
+    list-style:none;
+    margin: 10px;
+
+}
+
+.displayHeader{
+    display:flex;
+    align-items:center;
+
+}
+.ulHeader{
+    display: flex;
+
+}
+.img2{
+    width: 200px;
+
+}
+.khabib{
+    width: 200px;
+
+}
+.KhabibetKhamzat{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.fieldset{
+    background-color: blue;
+}
