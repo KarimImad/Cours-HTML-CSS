@@ -144,6 +144,246 @@
 
       
     </section>
+
+    <!--<script> 
+        let sonPrenom = prompt('Quel est ton prénom?');
+        alert('Bonjour,' + sonPrenom+'! :-(');
+    </script>
+    <script>
+
+    </script> -->
+
+    <!--<script>
+        let tonBonjour = prompt ( 'Bonjour, 2 reponses possibles : Bonjour ou Tu vas bien ? ');
+        if (tonBonjour.toLowerCase() ==='bonjour') {
+            alert('Bonjour à toi');
+        } else if (tonBonjour.toLowerCase()==='tu vas bien ?'){
+            alert ('Bien, et toi?');
+        } else {
+            alert ('Désolé, je n ai pas compris');
+        }
+
+    </script> -->
+
+    <!--<script>
+        let inputUser = prompt ('Bonjour');
+        if (inputUser.toLowerCase()==='bonjour'){
+            let inputCava = prompt ('Bonjour, ça va ?');
+        
+                 if (inputCava.toLowerCase()==='oui'){ 
+                     alert ('Je suis content pour toi');
+                 }
+                 else {
+                    alert ('Désolé il faut que je file')
+                 }
+        }    
+    </script>-->
+
+   <!-- <script>
+        
+      let inputUser = prompt ('Bonjour');
+        if (inputUser.toLowerCase()==='bonjour'){
+            let inputCava = prompt ('Bonjour, ça va ? (oui/non)');
+        
+                 if (inputCava.toLowerCase()==='oui'){ 
+                     let inputPremier = prompt ('Tu a bien dormis ? (oui/non)'); 
+                        if (inputPremier.toLowerCase()==='oui'){
+                            let inputDormir = prompt ('Super alors tu vas passer une bonne journée');
+                        } else if (inputPremier.toLowerCase()==='non'){
+                            let inputMauvais = prompt ('Alors tu passeras une mauvaise journée');
+                        }
+                 }
+
+                 else if (inputCava.toLowerCase()==='non'){
+                    let inputNon = prompt ('Tu es malade ?  (oui/non)');
+                        if (inputNon.toLowerCase()==='oui'){
+                            let inputMalade = prompt ('Va te soigner');
+                        } else if (inputNon.toLowerCase()==='non'){
+                            let inputBon = prompt ('Alors tu passeras une bonne journée (oui/non)');
+                                if (inputBon.toLowerCase()==='oui'){
+                                    alert ('tant mieux')
+                                }
+                        }
+
+                 }
+                 
+        }      
+        
+    </script>-->
+
+    <!--<script>
+        for ( let monNombre = 1 ; monNombre <= 199 ; monNombre++ ) {
+  console.log( monNombre );
+}
+
+    </script> -->
+
+   <!--- <script>
+for (let i = 1; i <= 199; i++) {
+    if ( i % 3 ===0 && i % 5 ===0){
+        console.log("FizzBuzz")
+    } else if (i % 3 === 0) {
+        console.log("Fizz");
+    } else if (i % 5 === 0){
+        console.log ("Buzz");
+    } else {
+        console.log(i);
+    }
+}  
+    </script>-->
+
+    <!---<script>
+        function diviserParDeux(nombre){
+            return nombre/2;
+        }
+
+        function sommeDesDeux(nombre){
+            return nombre+nombre;
+        }
+        
+        function calculDesTrois(nombre){
+            return nombre+nombre-nombre*nombre;
+        }
+
+    </script>--->
+
+    <!---<script>
+
+        function signeMessage(nombre) {
+            if (nombre > 0) {
+                return "Le nombre est positif";
+            } else if (nombre < 0) {
+                return "Le nombre est négatif";
+            } else {
+                return "Le nombre est zéro";
+            }
+        }
+
+    </script>--->
+
+   <!--- <script>
+    function factorielle(n) {
+        if (n < 0) {
+                return "Erreur : le nombre doit être positif ou nul.";
+            } else if (n === 0 || n === 1) {
+                return 1;
+            } else {
+                let resultat = 1;
+                for (let i = 2; i <= n; i++) {
+                    resultat *= i;
+                }
+                return resultat;
+            }
+
+        }
+        
+    </script>--->
+
+   <!--- <script>
+    function comparer (User, Ordinateur) {
+        if (User === Ordinateur) {
+            return "Egalité";       
+        } 
+        switch (User) {
+            case  "pierre":
+                return Ordinateur === "ciseaux" ? "joueur" : "ordi";
+            case "papier":
+                return Ordinateur === "pierre" ? "joueur" : "ordi";
+            case "ciseaux":
+                return Ordinateur === "papier" ? "joueur" : "ordi";
+            default:
+                return "Choix invalide";        
+        }
+    }
+
+    function jouerPartie() {
+        let scoreOrdinateur = 0;
+        let scoreJoueur = 0;
+
+        for (let i=0; i < 3; i++) {
+            let choixOrdi = Math.random() < 0.33 ? "pierre" : Math.random() < 0.66 ? "papier" : "ciseaux";
+            let choixJoueur = prompt("Choisissez pierre, papier ou ciseaux :").toLowerCase();  
+
+            let resultat = comparer(choixJoueur, choixOrdi);
+            console.log("le resultat de cette manche est : ", resultat);
+
+            if (resultat === "joueur") {
+                scoreJoueur++;
+                console.log("Le joueur gagne cette manche !");
+            } else if (resultat === "ordi") {
+                scoreOrdinateur++;
+                console.log("L'ordinateur gagne cette manche !");
+            } else {
+                console.log("C'est une égalité !");
+            }
+
+        }
+
+        if (scoreJoueur > scoreOrdinateur) {
+            console.log("Le joueur a gagné la partie !");
+            } else if (scoreOrdinateur > scoreJoueur) {
+                console.log("L'ordinateur a gagné la partie !");
+            } else {
+                console.log("La partie est une égalité !");
+            }
+    }
+
+    jouerPartie();
+
+    </script>-->
+
+   <!---<script>
+        let jours = ['lun', '007', 'mer', 'jeu', 'ven', 'sam', 'BUG'];
+        let f = jours.pop();
+        console.log(f);
+
+    </script>-->
+
+    <!--<script>
+        var fruits = ['Mangue', 'Raisin', 'Figue', 'Kiwi'];
+        var choix = prompt('Quel fruit voulez-vous acheter ? (Mangue, Raisin, Figue, Kiwi)');
+
+        var resultat = fruits.indexOf(choix);
+
+        if (fruits.indexOf(choix) !== -1) {
+            alert('Le fruit ' + choix + ' est disponible.');
+            fruits.splice(resultat, 1);
+        } else {
+            alert('Désolé, le fruit ' + choix + ' n\'est pas disponible.');
+        } 
+
+            alert(fruits);
+            console.log(fruits);
+
+
+    </script>-->
+
+    <script>
+        var lettresAttendues = ['s', 'u', 'p', 'e', 'r'];
+        var mauvaiseLettre = []
+        var lettresTrouvees = [];
+
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+            
+            reponse = prompt ('Devine le mot en rentrant une lettre');
+            if (reponse.length === 1) {
+                if (lettresAttendues.includes(reponse)) {
+                    alert('Bravo, tu as trouvé une lettre !');
+                } else {
+                    mauvaiseLettre.push(reponse);
+                    alert('Désolé, cette lettre n\'est pas dans le mot. Lettres incorrectes : ' + mauvaiseLettre.join(', '));
+                }
+            } else {
+                alert('Veuillez entrer une seule lettre.');
+            }   
+        } 
+
+
+
+    </script>
+
+
     </main>
 </body>
 </html>
